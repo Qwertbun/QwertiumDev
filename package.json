@@ -94,8 +94,8 @@
             {
                 "provider": "github",
                 "releaseType": "release",
-                "owner": "AuroraTeam",
-                "repo": "Launcher"
+                "owner": "Qwertbun",
+                "repo": "Reliser"
             }
         ],
         "directories": {
