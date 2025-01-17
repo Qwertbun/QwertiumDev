@@ -79,5 +79,39 @@
             "style": "module",
             "parser": "typescript"
         }
+    },
+    "build": {
+    "appId": "ru.aurora.launcher",
+    "productName": "Aurora Launcher",
+    "publish": [
+        {
+            "provider": "github",
+            "releaseType": "release",
+            "owner": "Qwertbun",
+            "repo": "Reliser"
+        }
+    ],
+    "directories": {
+        "buildResources": "resources"
+    },
+    "files": [
+        "build/**/*",
+        "!node_modules/**/*"
+    ],
+    "nsis": {
+        "artifactName": "${name}-Setup-${version}.${ext}"
+    },
+    "mac": {
+        "category": "public.app-category.games"
+    },
+    "linux": {
+        "target": [
+            "deb",
+            "rpm",
+            "AppImage"
+        ],
+        "category": "Game",
+        "maintainer": "AuroraTeam <null@aurora-team.ru>"
     }
+}
 }
