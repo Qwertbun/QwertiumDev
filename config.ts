@@ -7,16 +7,16 @@ export const window = {
     resizable: false,
     maximizable: false,
     fullscreenable: false,
-    title: 'Aurora Launcher',
+    title: 'MSRp Launcher',
 };
 
 export const api = {
-    ws: 'ws://127.0.0.1:1370/ws',
-    web: 'http://127.0.0.1:1370',
+    ws: 'ws://owa.mine-souls.ru:1370/ws',
+    web: 'http://owa.mine-souls.ru:1370',
     publicKey,
 };
 
-export const appPath = '.aurora-launcher';
+export const appPath = '.MSRp-launcher';
 
 export const discordRPC = {
     appId: '1214685301793103902',
@@ -31,7 +31,7 @@ export const discordRPC = {
         ],
         largeImageKey: 'logo',
         smallImageKey: 'logo_mc',
-        largeImageText: 'Aurora Launcher',
+        largeImageText: 'Launcher',
         smallImageText: 'Minecraft',
     },
     profile: {
@@ -45,7 +45,7 @@ export const discordRPC = {
         ],
         largeImageKey: 'logo',
         smallImageKey: 'logo_mc',
-        largeImageText: 'Aurora Launcher',
+        largeImageText: 'Launcher',
         smallImageText: 'Minecraft',
     },
     game: {
@@ -59,7 +59,7 @@ export const discordRPC = {
         ],
         largeImageKey: 'logo',
         smallImageKey: 'logo_mc',
-        largeImageText: 'Aurora Launcher',
+        largeImageText: 'Launcher',
         smallImageText: 'Minecraft',
     },
 };
