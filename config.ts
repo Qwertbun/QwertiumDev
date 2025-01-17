@@ -11,8 +11,8 @@ export const window = {
 };
 
 export const api = {
-    ws: 'ws://127.0.0.1:1370/ws',
-    web: 'http://127.0.0.1:1370',
+    ws: 'ws://owa.mine-souls.ru:1370/ws',
+    web: 'http://owa.mine-souls.ru:1370',
     // extraToken: token,
 };
 
