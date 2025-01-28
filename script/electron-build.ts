@@ -3,7 +3,7 @@ import { api, window } from '../config'
 
 await build({
     config: {
-    appId: "ru.aurora.launcher",
+    appId: "ru.msrp.launcher",
     productName: window.title,
     electronLanguages: [
         "en-US"
@@ -38,7 +38,7 @@ await build({
             "AppImage"
         ],
         category: "Game",
-        maintainer: "AuroraTeam <null@aurora-team.ru>"
+        maintainer: "MineSoulsTeam <admin@mine-souls.ru>"
     }
   }
   })

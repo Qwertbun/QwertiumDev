@@ -1,11 +1,14 @@
 import { useEffect, useRef } from 'react';
-import { IdleAnimation, SkinViewer } from 'skinview3d';
+import { SkinViewer, WaveAnimation } from 'skinview3d';
 import { getUserData } from '../../utils';
+import { useAtomValue } from 'jotai';
 
 import defaultSkin from '../assets/images/steve.png';
+import { titlebarUser } from './TitleBar/states';
 
 export default function SkinView() {
     const skinCanvas = useRef<HTMLCanvasElement>(null);
+    const username = useAtomValue(titlebarUser);
 
     useEffect(() => {
         const skinViewer = new SkinViewer({
@@ -16,11 +19,11 @@ export default function SkinView() {
 
         skinViewer.camera.position.x = -20;
         skinViewer.camera.position.y = 20;
-        skinViewer.zoom = 0.8;
-        skinViewer.controls.enableZoom = false;
-    
+        skinViewer.zoom = 0.7;
+        skinViewer.controls.enableZoom = true;
+        skinViewer.nameTag = username;
 
-        skinViewer.animation = new IdleAnimation();
+        skinViewer.animation = new WaveAnimation();
 
         // Поддержка загрузки и отображения скина
         const { skinUrl, capeUrl, isAlex } = getUserData();
