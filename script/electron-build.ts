@@ -38,7 +38,7 @@ await build({
             "AppImage"
         ],
         category: "Game",
-        maintainer: "MineSoulsTeam <admin@mine-souls.ru>"
+        maintainer: "AuroraTeam <null@aurora-team.ru>"
     }
   }
   })
